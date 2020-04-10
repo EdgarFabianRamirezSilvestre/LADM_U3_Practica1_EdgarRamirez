@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LADM_U3_Practica1_EdgarRamirez</string>
+    <string name="selected_item">Seleccione una de las siguientes opciones</string>
+    <string-array name="seleccion">
+        <item>Seleccione una opción</item>
+        <item>Muestra Todo</item>
+        <item>Id Actividad</item>
+        <item>Descripcion</item>
+        <item>Fecha Captura</item>
+        <item>Fecha Entrega</item>
+    </string-array>
+</resources>

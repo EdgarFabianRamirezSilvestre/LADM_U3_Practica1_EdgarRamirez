@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#AEF8FA"
+    tools:context=".ShowActividad">
+    <TextView
+        android:id="@+id/txtActividad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diseno_text"
+        android:gravity="center"
+        android:text="DATOS  ACTIVIDAD"
+        android:textSize="24sp"
+        android:letterSpacing="0.3"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtCaptura2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Id Actividad:"
+        android:textSize="24dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diseno_text"
+        android:textSize="24dp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtCaptura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha Captura:"
+        android:textSize="24dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editFechaCaptura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diseno_text"
+        android:textSize="24dp"
+        android:focusable="false"
+        android:inputType="none" />
+
+    <TextView
+        android:id="@+id/txtEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha Entrega:"
+        android:textSize="24dp"
+        android:textColor="#000000"
+         />
+
+    <EditText
+        android:id="@+id/editFechaEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diseno_text"
+        android:focusable="false"
+       android:textSize="24dp"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Descripción:"
+        android:textSize="24dp"
+         />
+
+    <EditText
+        android:id="@+id/editDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/diseno_text"
+        android:textSize="24dp"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMostrarEvidencia"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/diseno_botones"
+                android:text="MOSTRAR EVIDENCIA" />
+
+            <Button
+                android:id="@+id/btnEliminarActividad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/diseno_botones"
+                android:text="ELIMINAR ACTIVIDAD" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</LinearLayout>
